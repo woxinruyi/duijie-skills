@@ -32,8 +32,6 @@ browser-act --session monitor browser open competitor3 https://shop-c.com
 
 ## Same-Browser Multi-Session (Shared Login State)
 
-> Coming soon (BETA)
-
 One browser, multiple sessions. **Shared login state, independent execution.**
 
 ```bash
@@ -60,8 +58,6 @@ browser-act --session track-orders browser open shop1 https://shop.com/orders
 ```
 
 ## Privacy Mode (Zero Residue)
-
-> Coming soon (BETA)
 
 Each session uses a fresh fingerprint and profile, with nothing persisted at the end. **Zero residue between sessions.**
 

@@ -9,7 +9,7 @@ Browser automation CLI built for AI agents. Get past anti-bot walls, hand off to
 
 ## Features
 
-- [Anti-Blocking](anti-blocking.md) — Three-layer system: environment-layer spoofing / execution-layer auto-resolution / human-layer remote handoff
+- [Anti-Blocking](anti-blocking.md) — Three-layer system: environment-layer emulation / execution-layer auto-resolution / human-layer remote handoff
 - [Better Headless](headless.md) — Default headless without disturbing, stealth headless undetected, no need to switch to headed when humans are needed
 - [Remote Assist](remote-assist.md) — One command to hand off to a human, any device takes over via the link, agent resumes seamlessly when done
 - [Browser Modes](browser-modes.md) — chrome (reuse local login), stealth privacy (frictionless batch scraping), stealth fixed identity (multi-account uncorrelated)

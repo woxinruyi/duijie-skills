@@ -41,7 +41,7 @@ The browser an AI agent needs has to reach places standard tools can't, let a hu
 **3. Zero-interference concurrency — every agent in its own lane**
 
 - Cross-browser parallel — independent cookies, fingerprints, proxies. Sites cannot correlate them.
-- Same-browser multi-session *(coming soon)* — shared login state, independent execution, tasks don't block each other.
+- Same-browser multi-session — shared login state, independent execution, tasks don't block each other.
 - Privacy mode — fresh fingerprint and empty profile per session, zero residue when done.
 
 **4. Designed for agent reasoning — not human scripts**
