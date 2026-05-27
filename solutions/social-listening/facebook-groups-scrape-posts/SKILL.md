@@ -163,7 +163,7 @@ Values are fixed and validated by `argparse choices`; no runtime query needed.
   4. Check `X-FB-Friendly-Name` header on each request; find `GroupsCometFeedRegularStoriesPaginationQuery`
   5. Extract `doc_id` from that request's POST body and pass it via `--doc-id`
 - **`group_name` can be null**: parsed from page HTML via heuristic regex; prefer `posts[*].group.name` (more reliable)
-- **Localized count fields**: `reactions.total_formatted` and `share_count_formatted` format depends on Facebook's UI language (e.g., Chinese locale returns `"1.2万"` instead of `"12K"`)
+- **Localized count fields**: `reactions.total_formatted` and `share_count_formatted` format depends on Facebook's UI language (e.g., non-English Facebook UI may return locale-specific number abbreviations instead of `"12K"`)
 - **Rapid requests trigger temporary throttling**: paginating too fast or calling multiple groups concurrently may return empty responses or temporary bans. Serialize group requests with a 2–5 s sleep between each
 - **GraphQL `field_exception` / partial edges + errors**: almost always caused by session cookie being cleared. Check `c_user` cookie and `require('CurrentUserInitialData').USER_ID` — if `0` / `null`, return to "Login Verification" and re-login; do not attempt to extract data from error responses
 - **Author avatar often null**: `author.profile_picture` is frequently unloaded in the group feed default response (Facebook lazy-loads avatars); a separate query is required if avatars are needed
